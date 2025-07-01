@@ -42,11 +42,11 @@ export function processPhoneNumber(phone) {
     }
     // Se o número tem 9 dígitos (sem DDD, apenas o celular)
     else if (cleanPhone.length === 9) {
-        processedPhone = '5511' + cleanPhone;
+        processedPhone = '5561' + cleanPhone;
     }
     // Se o número tem 8 dígitos (sem DDD, formato antigo)
     else if (cleanPhone.length === 8) {
-        processedPhone = '55119' + cleanPhone;
+        processedPhone = '55619' + cleanPhone;
     }
     // Para números com mais de 13 dígitos, assume que já está completo
     else if (cleanPhone.length >= 12) {
