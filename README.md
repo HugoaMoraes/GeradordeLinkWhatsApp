@@ -113,7 +113,7 @@ O projeto utiliza um design system consistente com:
 ## Diagrama
 
 <div align="center">
-<img src="" width="auto" />
+<img src="https://github.com/user-attachments/assets/202deae0-e36f-4a55-9f7b-6eccfa7c857a" width="auto" />
 </div>
 
 ## Informações:
