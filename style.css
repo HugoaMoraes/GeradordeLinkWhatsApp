@@ -72,9 +72,16 @@ body {
     );
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    padding: var(--space-2) var(--space-2) 0;
+}
+
+#app {
+    flex: 1;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-2);
+    min-height: calc(100vh - 120px);
 }
 
 .container {
@@ -443,42 +450,47 @@ input:focus-visible {
 }
 
 .rodapé {
-  padding: 1em;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+    padding: var(--space-4) var(--space-2) var(--space-3);
+    margin-top: var(--space-4);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--gray-200);
 }
 
 .logohugo {
-  background: url("/public/HByHugo.svg") no-repeat center;
-  background-size: contain;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
+    background: url("/public/HByHugo.svg") no-repeat center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-left: var(--space-1);
+    transition: var(--transition);
 }
 
 .copyright {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  color: var(--gray-600);
-  font-size: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-600);
+    font-size: 0.875rem;
+    gap: var(--space-1);
 }
 
 .copyright a {
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  transition: var(--transition);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: var(--transition);
+    border-radius: var(--radius-sm);
+    padding: var(--space-1);
+}
+
+.copyright a:hover {
+    background: rgba(37, 211, 102, 0.1);
 }
 
 .copyright a:hover .logohugo {
-  transform: scale(1.1);
-}
-
-/* Ajuste para evitar sobreposição do footer */
-body {
-  padding-bottom: 80px;
+    transform: scale(1.1);
 }
