@@ -456,7 +456,7 @@ input:focus-visible {
   width: 30px;
   height: 30px;
   display: inline-block;
-  margin-left: 0px;
+  margin-bottom: 20px;
 }
 
 .copyright {
