@@ -36,6 +36,13 @@ export class WhatsAppGenerator {
           <div id="phone-input-container"></div>
           <div id="generate-button-container"></div>
           <div id="result-container"></div>                    
+          <footer class="rodapé">
+            <div class="copyright">&copy; 2025. Developed by
+              <a href="https://bento.me/ohugo" target="_blank" alt="Logo Hugo Design">
+                <div class="logohugo"></div>
+              </a>
+            </div>
+          </footer>
         </div>
       </div>
       
